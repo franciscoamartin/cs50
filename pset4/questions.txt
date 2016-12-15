@@ -1,0 +1,23 @@
+0. BMP:32 bit color, or over 4 billion; GIF:8 bits, 256 colors; JPEG:24 bit, 16 million; PNG:24 bit, 16 million
+1. GIF
+2. The lossless compression is usually applied to images where the quality and image fidelity is important, as for a professional photographer, or a doctor as the radiographs. Examples of this type of compression formats: PNG and TIFF (although some variants of this have data loss).
+   The lossy compression is used where the portability and the reduction of the image are more important than the quality, without disregard this. This is the case of digital cameras in general, that record more information than the human eye detects: some compression systems use this fact to advantage and can therefore waste "irrelevant" data. The JPEG compression uses this type of images. The GIF format also has a lossy compression, but unlike JPEG uses compression "dumb", which greatly affect the image quality.
+3. JPEG
+4. When the file is deleted, the information is deleted from the system, but the hard drive it is still there and can be retrieved with programs if your site has not yet been rewritten.
+5. You need to use specific programs to scan the system and empty and reset the sectors.
+6. stdint.h is a header file that declares specified integer types as having a certain width.
+7. It makes clear that you intend to use the data a specific way. uint24_t means an integer that is exactly 24 bits wide
+8. BYTE is 1 byte, DWORD is 4 bytes, LONG is 4 bytes, WORD is 2 bytes
+9. The first two bytes of a BMP is a WORD and denotes bfType, which specifies the file type. It must be set to the signature word BM (0x4D42) to indicate bitmap.
+10. bfSize = The size, in bytes, of the bitmap file. biSizeImage = The size, in bytes, of the image.
+11. biHeight is positive, the bitmap is a bottom-up DIB and its origin is the lower left corner.
+    biHeight is negative, the bitmap is a top-down DIB and its origin is the upper left corner.
+12. The biBitCount member of the BITMAPINFOHEADER structure determines the number of bits that define each pixel and the maximum number of colors in the bitmap.
+13. fopen will return NULL if it cannot create the outfile to write to.
+14. Because the program is reading in 1 RGB triple at a time.
+15. The padding would be 3, because 3 pixels * 3 bytes per pixel * 3 padding = 12, which is a multiple of 4.
+16. It moves to a specific location in a file.
+17. This is an integer constant which, when used as the whence argument to the fseek or fseeko function, specifies that the offset provided is relative to the current file position
+18. A man wearing a suit, still can not identify who is.
+
+
